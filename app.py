@@ -1,2 +1,4 @@
-def main():
-    return "Hello from minimal app.py"
+import app
+
+def test_main():
+    assert app.main() == "Hello from minimal app.py"
