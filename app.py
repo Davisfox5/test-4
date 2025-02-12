@@ -1,11 +1,5 @@
-"""
-Minimal app.py for a self-healing project.
+import pytest
+import app
 
-You can expand it using "sauron.py generate-code --repo <name> --prompt <prompt>"
-"""
-
-def main():
-    return "Hello from minimal app.py"
-
-if __name__ == "__main__":
-    print(main())
+def test_main():
+    assert app.main() == "Hello from minimal app.py"
